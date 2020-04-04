@@ -4,9 +4,9 @@
     <div class="container">
       <h2>Find User</h2>
       <form>
-      <label for="name">Enter UserName :</label>
+      <label for="name">Enter Github UserName :</label>
         <input type="text" class="form-control" id="name"  name="name"
-        placeholder="Username" [(ngModel)]="username" >  
+        placeholder="Github Username" [(ngModel)]="username" >  
         <button class="btn btn-success" (click)="showUser()">SEARCH</button>
         <button type="reset" class="btn btn-info">Clear</button>
     </form>
@@ -20,6 +20,11 @@
         <div class="card">
           <h5>Name: {{user.name}}</h5>
           <h5>Bio: {{user.bio}}</h5>
+          <h5>Repositories: {{user.repositories}}</h5>
+          <h5>Followers: {{user.followers}}</h5>
+          <h5>Following: {{user.following}}</h5>
+          <h5>Company: {{user.company}}</h5>
+          <h5>last updated: {{user.update|date}}</h5>
         </div>
       </div>
     </div>
