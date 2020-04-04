@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { UserComponent } from './user/user.component';
+import { RepositoryComponent } from './repository/repository.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
-    UserComponent
+    UserComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
