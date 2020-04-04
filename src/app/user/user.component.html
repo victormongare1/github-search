@@ -6,19 +6,20 @@
       <form>
       <label for="name">Enter UserName :</label>
         <input type="text" class="form-control" id="name"  name="name"
-        placeholder="Username"> 
+        placeholder="Username" [(ngModel)]="username" >  
+        <button class="btn btn-success" (click)="showUser()">SEARCH</button>
+        <button type="reset" class="btn btn-info">Clear</button>
     </form>
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-
+          <img src="{{user.avatar}}">
         </div>
       </div>
       <div class="col-md-6">
         <div class="card">
-          <h5>Name:</h5>
-          <h5>Bio:</h5>
-          
+          <h5>Name: {{user.name}}</h5>
+          <h5>Bio: {{user.bio}}</h5>
         </div>
       </div>
     </div>
