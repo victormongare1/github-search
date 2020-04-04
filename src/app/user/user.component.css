@@ -9,3 +9,9 @@ body{
 h2{
   font-size: 50px;
 }
+.card{
+  padding-top: 20px;
+  background-color: black;
+  color: white;
+  text-align: left;
+}

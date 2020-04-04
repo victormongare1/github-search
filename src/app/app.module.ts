@@ -8,6 +8,8 @@ import { UserComponent } from './user/user.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
+import { HttpClientModule} from '@angular/common/http'
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RoutingModule
+    RoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
