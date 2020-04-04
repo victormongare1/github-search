@@ -4,12 +4,14 @@ import {RouterModule,Routes} from '@angular/router'
 import { UserComponent} from '../user/user.component';
 import { RepositoryComponent} from '../repository/repository.component';
 import { NotFoundComponent } from '../not-found/not-found.component';
-import {AppComponent} from '../app.component';
+import {AboutComponent} from '../about/about.component'
 
-const routes:Routes=[
-  {path:"users",component:UserComponent},
-  {path:"repo",component:RepositoryComponent},
-  {path:"",component: AppComponent},
+const routes : Routes=[
+  {path:'about',component:AboutComponent},
+  {path:'user',component:UserComponent},
+  {path:'repository',component:RepositoryComponent},
+  {path:'',redirectTo:'/about',pathMatch:"full"},
+
   {path:'**',component:NotFoundComponent}
 ]
 

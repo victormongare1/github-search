@@ -1,0 +1,15 @@
+body{
+  color: white;
+  text-align: center;
+  background-image: url(../assets/ian-schneider-TamMbr4okv4-unsplash.jpg);
+}
+
+h1 {
+
+  font-size : 70px;
+  font-family: 'Trade Winds';
+}
+p{
+  font-size: 40px;
+  font-family: 'Yeon Sung';
+}

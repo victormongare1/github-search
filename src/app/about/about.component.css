@@ -1,0 +1,15 @@
+body{
+  color: white;
+  text-align: center;
+  background-color: black;
+  height: 700px;
+}
+
+h1 {
+  font-size : 70px;
+  font-family: 'Trade Winds';
+}
+p{
+  font-size: 40px;
+  font-family: 'Pacifico';
+}
