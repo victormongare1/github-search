@@ -9,7 +9,8 @@ import { RepositoryComponent } from './repository/repository.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { HttpClientModule} from '@angular/common/http'
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { CounterPipe } from './counter.pipe'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {FormsModule} from '@angular/forms'
     UserComponent,
     RepositoryComponent,
     NavbarComponent,
-    AboutComponent
+    AboutComponent,
+    CounterPipe
   ],
   imports: [
     BrowserModule,
