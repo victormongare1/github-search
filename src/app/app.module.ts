@@ -10,7 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { HttpClientModule} from '@angular/common/http'
 import {FormsModule} from '@angular/forms';
-import { CounterPipe } from './counter.pipe'
+import { CounterPipe } from './counter.pipe';
+import { HighlightDirective } from './highlight.directive'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CounterPipe } from './counter.pipe'
     RepositoryComponent,
     NavbarComponent,
     AboutComponent,
-    CounterPipe
+    CounterPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
