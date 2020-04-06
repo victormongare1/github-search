@@ -11,14 +11,14 @@
         <button type="reset" class="btn btn-info">Clear</button>
     </form>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="card">
-          <img src="{{user.avatar}}">
+          <img class="img-thumbnail" src="{{user.avatar}}">
         </div>
       </div>
       <div class="col-md-6">
         <div class="card">
-          <h5>Name: {{user.name}}</h5>
+          <h5 appHighlight >Name: {{user.name}}</h5>
           <h5>Bio: {{user.bio}}</h5>
           <h5>Repositories: {{user.repositories}}</h5>
           <h5>Followers: {{user.followers}}</h5>

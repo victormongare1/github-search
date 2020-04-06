@@ -10,21 +10,21 @@
       <label for="name"> Enter Repository name :</label>
         <input type="text" class="form-control" id="repository"  name="repository" placeholder=" github repository " [(ngModel)]="repository"> 
         <button type="submit" (click)="showRepo()" class="btn btn-success">Search</button>
-          
+        <button type="reset" class="btn btn-info">Clear</button>  
       </form>
       <div class="row">
         <div class="col-md-4">
           <div class="card" >
-          <img src="user.avatar">
+          <img class="img-thumbnail" src="{{user.avatar}}">
           <h5>Name: {{user.name}}</h5>
           </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
           <div class="card">
             <h5>Repo name: {{repo.name}}</h5>
             <h5>Description: {{repo.description}}</h5>
             <h5>Forks: {{repo.forks}}</h5>
-            <a href="repo.link"><button class="btn-lg btn-primary">View Repo</button></a>
+            <a href="{{repo.link}}"><button class="btn-lg btn-primary">View Repo</button></a>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import {User} from './user'
   providedIn: 'root'
 })
 export class RepoService {
-  apiURL="https://api.github.com/users/"
+  apiURL="https://api.github.com/repos/"
   repo : Repo
   user : User
 
@@ -28,7 +28,7 @@ export class RepoService {
     }
 
   let promise = new Promise((resolve,reject)=>{
-    this.http.get<ApiResponse>(this.apiURL+ username + '/'+ repository + '?access_token=' + environment.token).toPromise().then(response=>{
+    this.http.get<ApiResponse>(this.apiURL+ username +'/' +repository ).toPromise().then(response=>{
       this.repo.name=response.name;
       this.repo.forks=response.forks;
       this.repo.link=response.html_url;
